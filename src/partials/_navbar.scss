@@ -1,0 +1,34 @@
+header{
+    .mynav_pt1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        strong{
+            font-weight: 600;
+        }
+    }
+    .mynav_pt2{
+        display: flex;
+        justify-content: center;
+        ul{
+            display: flex;
+            list-style: none;
+            margin: auto;
+            padding: 0;
+            li{
+                padding-left: $spacing / 3;
+                padding-right: $spacing / 3;
+                a{
+                    font-weight: 600;
+                    color: $secondary_text;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.nav_line{
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid $line_color;
+}
