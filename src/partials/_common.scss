@@ -5,6 +5,19 @@
     font-weight: 300;
 }
 section{
-    padding-top: $spacing / 3;
-    padding-bottom: $spacing / 3;
+    padding-top: $spacing / 1.5;
+    padding-bottom: $spacing / 1.5;
+}
+strong{
+    font-weight: 600;
+}
+.my_btn{
+    padding: $spacing / 2;
+    border-radius: 30px;
+    background-color: $primary_color;
+    border: 0px;
+    &:hover{
+        background-color: $hover_green;
+        color: $primary_color;
+    }
 }

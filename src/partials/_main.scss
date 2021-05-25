@@ -1,0 +1,17 @@
+main{
+    .jumbotron{
+        background-image: url('/imgs/banner-5-2x-scaled.jpg');
+        background-color: rgba(0, 0, 0, 0.5);
+        background-size: contain;
+        background-size: 100%;
+        color: $primary_text;
+        h1{
+            font-family: $secondary_font;
+            font-size: 3rem;
+            padding: $spacing 0;
+        }
+        .jumbotron_text{
+            padding: ($spacing * 4) 0;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.first_green_line{
+    .first_green_line_text{
+        display: flex;
+        justify-content: space-around;
+    }
+    background-color: $primary_green;
+    background-image: url('/imgs/bg-transparent-3.png');
+    color: $primary_text;
+}
