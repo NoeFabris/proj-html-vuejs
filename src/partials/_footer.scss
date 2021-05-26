@@ -1,0 +1,53 @@
+footer{
+    background-color: $primary_green;
+    padding: ($spacing * 2) 0;
+    color: $primary_text;
+    .logo_info{
+        @include footer_col;
+        img{
+            width: 80%;
+            padding-bottom: $spacing;
+        }
+        a{
+            color: $primary_text;
+            text-decoration: none;
+        }
+    }
+    .footer_brands{
+        @include footer_col;
+        p{
+            font-size: 1.5rem;
+        }
+        span, a{
+            padding: ($spacing / 3) 0;
+        }
+        a{
+            text-decoration: none;
+            color: $primary_text;
+        }
+    }
+    .bg_box_footer{
+        @include footer_col;
+        @include green_line;
+        border-radius: 5px;
+        padding: $spacing;
+        p{
+            font-size: 1.5rem;
+        }
+        background-color: $text_green;
+        input{
+            width: 100%;
+            @include input;
+        }
+        button{
+            width: 100%;
+            margin-top: $spacing;
+        }
+    }
+    .footer-line{
+        height: 1px;
+        width: 100%;
+        border-radius: 1px;
+        border-bottom: 1px solid $line_color;
+    }
+}

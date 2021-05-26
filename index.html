@@ -443,7 +443,58 @@
     
         </main>
         <footer>
-    
+
+            <section class="footer_top">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-3 logo_info">
+
+                            <img src="/imgs/mobile-light-pet-logo-2x.png" alt="">
+                            <a href="#">{{contactsInfo.address}}</a>
+                            <a href="#">{{contactsInfo.emailAddress}}</a>
+                            <a href="#">Call Us: {{contactsInfo.phoneNumber}}</a>
+
+                        </div>
+                        <div class="col-3 footer_brands">
+
+                            <p>Shop By Brand</p>
+                            <span>Bed</span>
+                            <span>Food</span>
+                            <span>Toys</span>
+                            <span>Transport</span>
+
+                        </div>
+                        <div class="col-3 footer_brands">
+                            
+                            <p>Useful links</p>
+                            <a :href="usefulLinks.account">My account</a>
+                            <a :href="usefulLinks.orders">Orders</a>
+                            <a :href="usefulLinks.checkout">Checkout</a>
+                            <a :href="usefulLinks.cart">Cart</a>
+
+                        </div>
+                        <div class="col-3 bg_box_footer">
+                            
+                            <p>Subscribe to our newsletter</p>
+                            <section>
+                                <input type="email" placeholder="Insert your email ...*">
+                                <button class="my_btn_reverse">Subscribe</button>
+                            </section>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <div class="container footer-line"></div>
+            <section class="footer_bottom">
+                
+            </section>
         </footer>
 
     </div>

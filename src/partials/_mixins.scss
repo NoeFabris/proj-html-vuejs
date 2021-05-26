@@ -31,3 +31,8 @@
     padding: 5px 40px;
     border-radius: 30px;
 }
+
+@mixin footer_col {
+    display: flex;
+    flex-direction: column;
+}

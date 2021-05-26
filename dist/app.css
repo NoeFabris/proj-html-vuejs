@@ -383,6 +383,68 @@ main .shop_pt2 .new_arrivals .new_arrivals_box img {
      object-fit: cover;
 }
 
+footer {
+  background-color: #1e3020;
+  padding: 60px 0;
+  color: #ffffff;
+}
+footer .logo_info {
+  display: flex;
+  flex-direction: column;
+}
+footer .logo_info img {
+  width: 80%;
+  padding-bottom: 30px;
+}
+footer .logo_info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .footer_brands {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_brands p {
+  font-size: 1.5rem;
+}
+footer .footer_brands span, footer .footer_brands a {
+  padding: 10px 0;
+}
+footer .footer_brands a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer .bg_box_footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e3020;
+  background-image: url("/imgs/bg-transparent-3.png");
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 30px;
+  background-color: #2a382a;
+}
+footer .bg_box_footer p {
+  font-size: 1.5rem;
+}
+footer .bg_box_footer input {
+  width: 100%;
+  background-color: lightgray;
+  border: 0px;
+  padding: 5px 40px;
+  border-radius: 30px;
+}
+footer .bg_box_footer button {
+  width: 100%;
+  margin-top: 30px;
+}
+footer .footer-line {
+  height: 1px;
+  width: 100%;
+  border-radius: 1px;
+  border-bottom: 1px solid #DCD5D0;
+}
+
 .first_green_line {
   background-color: #1e3020;
   background-image: url("/imgs/bg-transparent-3.png");
