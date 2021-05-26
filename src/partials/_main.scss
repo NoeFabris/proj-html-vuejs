@@ -122,10 +122,8 @@ main{
     }
     .shop_half_break{
         .join_newsletter{
-            position: absolute;
-            bottom: -60%;
-            display: flex;
-            width: 90%;
+            // display: flex;
+            transform: translateY(-15%);
             @include banner;
             color: $secondary_text;
             background-image: url(/imgs/banner-7-2x-scaled.jpg);
@@ -138,6 +136,42 @@ main{
                     @include input;
                     padding: 5px 20px;
                 }
+            }
+        }
+        .tip_tricks{
+            .tip_tricks_text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                span{
+                    color: $hover_green;
+                }
+            }
+            .category_box{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0 10px ($spacing * 2) 10px;
+                p{
+                    padding:  ($spacing * 1);
+                    padding-bottom: ($spacing * 0.2);
+                    margin-bottom: 0;
+                    font-size: 1.5rem;
+                }
+                span{
+                    padding: 0 ($spacing * 1);
+                    color: $third_text;
+                    font-size: 0.8rem;
+                }
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .read_all{
+                display: flex;
+                justify-content: center;
+                padding-bottom: ($spacing * 2);
             }
         }
     }

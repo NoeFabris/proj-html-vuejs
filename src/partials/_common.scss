@@ -33,4 +33,7 @@ strong{
     background-color: $hover_green;
     color: $primary_color;
     border: 0px;
+    &:hover{
+        background-color: $text_green;
+    }
 }

@@ -39,6 +39,9 @@ strong {
   color: #ffffff;
   border: 0px;
 }
+.my_btn_reverse:hover {
+  background-color: #2a382a;
+}
 
 header .mynav_pt1 {
   display: flex;
@@ -223,10 +226,7 @@ main .shop_pt1 .best_sellers button {
   align-self: center;
 }
 main .shop_half_break .join_newsletter {
-  position: absolute;
-  bottom: -60%;
-  display: flex;
-  width: 90%;
+  transform: translateY(-15%);
   background-size: contain;
   background-size: 100% 100%;
   color: #ffffff;
@@ -250,6 +250,41 @@ main .shop_half_break .join_newsletter div input {
   padding: 5px 40px;
   border-radius: 30px;
   padding: 5px 20px;
+}
+main .shop_half_break .tip_tricks .tip_tricks_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .shop_half_break .tip_tricks .tip_tricks_text span {
+  color: #3d6f42;
+}
+main .shop_half_break .tip_tricks .category_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 10px 60px 10px;
+}
+main .shop_half_break .tip_tricks .category_box p {
+  padding: 30px;
+  padding-bottom: 6px;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+main .shop_half_break .tip_tricks .category_box span {
+  padding: 0 30px;
+  color: #978f88;
+  font-size: 0.8rem;
+}
+main .shop_half_break .tip_tricks .category_box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .shop_half_break .tip_tricks .read_all {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
 }
 
 .first_green_line {
@@ -282,9 +317,6 @@ main .shop_half_break .join_newsletter div input {
   color: #978f88;
 }
 
-.shop_half_break {
-  position: relative;
-}
 .shop_half_break .green_block {
   background-color: #1e3020;
   background-image: url("/imgs/bg-transparent-3.png");
