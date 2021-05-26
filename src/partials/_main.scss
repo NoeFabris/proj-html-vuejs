@@ -1,9 +1,9 @@
 main{
     .jumbotron{
         background-image: url('/imgs/banner-5-2x-scaled.jpg');
-        background-color: rgba(0, 0, 0, 0.5);
+        opacity: rgba(0, 0, 0, 1);
         background-size: contain;
-        background-size: 100%;
+        background-size: 100% 100%; 
         color: $primary_text;
         h1{
             font-family: $secondary_font;
@@ -12,6 +12,70 @@ main{
         }
         .jumbotron_text{
             padding: ($spacing * 4) 0;
+        }
+    }
+    .shop_pt1{
+        .browse_category{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: $spacing 0;
+            h4{
+                font-family: $secondary_font;
+            }
+        }
+        .category_box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 5px ($spacing * 3) 5px;
+            span{
+                padding: ($spacing / 2) 0;
+            }
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .food_box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: ($spacing * 2.5) 0;
+            color: $primary_text;
+            // background: $primary_green;
+
+
+            // background: #eb01a5;
+            background-image: url("/imgs/bg-transparent-3.png"); /* fallback */
+            background-image: url("/imgs/bg-transparent-3.png"), linear-gradient($primary_green, rgba(30,49,32,0.9)); 
+
+            // background: linear-gradient(to bottom, transparent, $primary_green), url('/imgs/bg-transparent-3.png');
+            // @include green_line;
+            h4{
+                font-family: $secondary_font;
+            }
+            span{
+                color: $hover_green;
+            }
+            img{
+                padding: $spacing 0;
+                width: 60%;
+            }
+            transition: transform .2s;
+            &:hover{
+                transform: scale(1.025);
+            }
+            
+        }
+        .fb1{
+            margin-right: 5px;
+        }
+        .fb2{
+            margin: 0 5px;
+        }
+        .fb3{
+            margin-left: 5px;
         }
     }
 }

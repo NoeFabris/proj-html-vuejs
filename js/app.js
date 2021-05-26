@@ -7,10 +7,11 @@ new Vue ({
             emailAddress: 'info@your-company.com',
             address: '1234 Avada Avenue Avadaville'
         },
+        shopLink: '#',
         menu: {
             link1: {
                 name: 'Home',
-                link: '',
+                link: '#',
                 dd: true,
                 dropdown: [
                     {
@@ -33,7 +34,7 @@ new Vue ({
             },
                 link2: {
                 name: 'Shop',
-                link: '',
+                link: '#',
                 dd: true,
                 dropdown: [
                     {
@@ -74,7 +75,7 @@ new Vue ({
             },
             link6: {
                 name: 'Shop By Brand',
-                link: '',
+                link: '#',
                 dd: true,
                 dropdown: [
                     {

@@ -1,0 +1,5 @@
+@mixin green_line {
+    background-color: $primary_green;
+    background-image: url('/imgs/bg-transparent-3.png');
+    color: $primary_text;
+}
