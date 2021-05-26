@@ -109,13 +109,17 @@ header .mynav_pt2 ul li a:hover {
 main .jumbotron {
   background-image: url("/imgs/banner-5-2x-scaled.jpg");
   opacity: black;
-  background-size: contain;
+  background-size: cover;
   background-size: 100% 100%;
   color: #ffffff;
+  overflow: hidden;
 }
 main .jumbotron h1 {
-  font-family: "Trocchi", serif;
   font-size: 3rem;
+  padding: 30px 0;
+}
+main .jumbotron h2 {
+  font-size: 2rem;
   padding: 30px 0;
 }
 main .jumbotron .jumbotron_text {
@@ -181,14 +185,18 @@ main .shop_pt1 .fb3 {
 }
 main .shop_pt1 .banner_new_arrivals {
   background-image: url(/imgs/banner-3-2x-scaled.jpg);
-  background-size: contain;
+  background-size: cover;
   background-size: 100% 100%;
   color: #ffffff;
+  overflow: hidden;
   padding: 120px 0;
 }
 main .shop_pt1 .banner_new_arrivals h1 {
-  font-family: "Trocchi", serif;
   font-size: 3rem;
+  padding: 30px 0;
+}
+main .shop_pt1 .banner_new_arrivals h2 {
+  font-size: 2rem;
   padding: 30px 0;
 }
 main .shop_pt1 .banner_new_arrivals div {
@@ -227,15 +235,19 @@ main .shop_pt1 .best_sellers button {
 }
 main .shop_half_break .join_newsletter {
   transform: translateY(-15%);
-  background-size: contain;
+  background-size: cover;
   background-size: 100% 100%;
   color: #ffffff;
+  overflow: hidden;
   color: #09110a;
   background-image: url(/imgs/banner-7-2x-scaled.jpg);
 }
 main .shop_half_break .join_newsletter h1 {
-  font-family: "Trocchi", serif;
   font-size: 3rem;
+  padding: 30px 0;
+}
+main .shop_half_break .join_newsletter h2 {
+  font-size: 2rem;
   padding: 30px 0;
 }
 main .shop_half_break .join_newsletter p {
@@ -285,6 +297,90 @@ main .shop_half_break .tip_tricks .read_all {
   display: flex;
   justify-content: center;
   padding-bottom: 60px;
+}
+main .shop_pt2 button {
+  font-size: 0.7rem;
+  width: 200px;
+}
+main .shop_pt2 .bg-dog {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-size: 100% 100%;
+  color: #ffffff;
+  overflow: hidden;
+  background-image: url("/imgs/banner-8-2x.jpg");
+}
+main .shop_pt2 .bg-dog h1 {
+  font-size: 3rem;
+  padding: 30px 0;
+}
+main .shop_pt2 .bg-dog h2 {
+  font-size: 2rem;
+  padding: 30px 0;
+}
+main .shop_pt2 .bg-dog span {
+  font-weight: 600;
+}
+main .shop_pt2 .bg-dog:hover {
+  transform: scale(1.025);
+}
+main .shop_pt2 .bg-cat {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-size: 100% 100%;
+  color: #ffffff;
+  overflow: hidden;
+  background-image: url("/imgs/banner-9-2x.jpg");
+}
+main .shop_pt2 .bg-cat h1 {
+  font-size: 3rem;
+  padding: 30px 0;
+}
+main .shop_pt2 .bg-cat h2 {
+  font-size: 2rem;
+  padding: 30px 0;
+}
+main .shop_pt2 .bg-cat span {
+  font-weight: 600;
+}
+main .shop_pt2 .bg-cat:hover {
+  transform: scale(1.025);
+}
+main .shop_pt2 .new_arrivals .new_arrivals_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+main .shop_pt2 .new_arrivals .new_arrivals_text span {
+  color: #3d6f42;
+}
+main .shop_pt2 .new_arrivals .new_arrivals_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px 60px 10px;
+}
+main .shop_pt2 .new_arrivals .new_arrivals_box p {
+  padding: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+main .shop_pt2 .new_arrivals .new_arrivals_box span {
+  padding: 0 30px;
+  color: #3d6f42;
+  font-size: 0.8rem;
+}
+main .shop_pt2 .new_arrivals .new_arrivals_box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .first_green_line {
@@ -346,4 +442,24 @@ main .shop_half_break .tip_tricks .read_all {
 }
 .shop_half_break .green_block div {
   padding: 60px 0;
+}
+
+.third_green_line {
+  background-color: #1e3020;
+  background-image: url("/imgs/bg-transparent-3.png");
+  color: #ffffff;
+}
+.third_green_line .features_box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+  text-align: center;
+}
+.third_green_line .features_box i {
+  font-size: 2.5rem;
+  padding-bottom: 15px;
+}
+.third_green_line .features_box p {
+  margin-bottom: 0;
 }

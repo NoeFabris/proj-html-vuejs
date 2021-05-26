@@ -5,12 +5,16 @@
 }
 
 @mixin banner {
-    background-size: contain;
+    background-size: cover;
     background-size: 100% 100%; 
     color: $primary_text;
+    overflow: hidden;
     h1{
-        font-family: $secondary_font;
         font-size: 3rem;
+        padding: $spacing 0;
+    }
+    h2{
+        font-size: 2rem;
         padding: $spacing 0;
     }
 }

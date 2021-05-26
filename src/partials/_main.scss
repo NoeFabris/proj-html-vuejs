@@ -175,4 +175,70 @@ main{
             }
         }
     }
+    .shop_pt2{
+        button{
+            font-size: 0.7rem;
+            width: 200px;
+        }
+        .bg-dog{
+            padding: ($spacing * 2) 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include banner;
+            background-image: url('/imgs/banner-8-2x.jpg');
+            span{
+                font-weight: $font_bold;
+            }
+            &:hover{
+                transform: scale(1.025);
+            }
+        }
+        .bg-cat{
+            padding: ($spacing * 2) 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include banner;
+            background-image: url('/imgs/banner-9-2x.jpg');
+            span{
+                font-weight: $font_bold;
+            }
+            &:hover{
+                transform: scale(1.025);
+            }
+        }
+        .new_arrivals{
+            .new_arrivals_text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: $spacing * 2;
+                span{
+                    color: $hover_green;
+                }
+            }
+            .new_arrivals_box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 10px ($spacing * 2) 10px;
+                p{
+                    padding:  ($spacing * 1);
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                    // font-size: 1.5rem;
+                }
+                span{
+                    padding: 0 ($spacing * 1);
+                    color: $hover_green;
+                    font-size: 0.8rem;
+                }
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
 }
