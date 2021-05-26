@@ -26,3 +26,34 @@
         }
     }
 }
+.shop_half_break{
+    position: relative;
+    .green_block{
+        @include green_line;
+        .testimonials_box{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 ($spacing * 2);
+            text-align: center;
+            img{
+                width: 25%;
+                height: auto;
+                border-radius: 50%;
+            }
+            p{
+                padding: $spacing 0;
+            }
+            span{
+                color: $third_text;
+            }
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            padding: ($spacing * 2) 0;
+        }
+    }
+}

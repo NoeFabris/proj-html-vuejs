@@ -3,3 +3,27 @@
     background-image: url('/imgs/bg-transparent-3.png');
     color: $primary_text;
 }
+
+@mixin banner {
+    background-size: contain;
+    background-size: 100% 100%; 
+    color: $primary_text;
+    h1{
+        font-family: $secondary_font;
+        font-size: 3rem;
+        padding: $spacing 0;
+    }
+}
+
+@mixin bold {
+    font-weight: $font_bold;
+}
+@mixin light {
+    font-weight: $font_light;
+}
+@mixin input {
+    background-color: lightgray;
+    border: 0px;
+    padding: 5px 40px;
+    border-radius: 30px;
+}

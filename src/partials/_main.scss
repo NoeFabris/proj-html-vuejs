@@ -2,19 +2,21 @@ main{
     .jumbotron{
         background-image: url('/imgs/banner-5-2x-scaled.jpg');
         opacity: rgba(0, 0, 0, 1);
-        background-size: contain;
-        background-size: 100% 100%; 
-        color: $primary_text;
-        h1{
-            font-family: $secondary_font;
-            font-size: 3rem;
-            padding: $spacing 0;
-        }
+        @include banner;
+        // h1{
+        //     font-family: $secondary_font;
+        //     font-size: 3rem;
+        //     padding: $spacing 0;
+        // }
         .jumbotron_text{
+            // @include bold;
             padding: ($spacing * 4) 0;
         }
     }
     .shop_pt1{
+        img{
+            padding: 0;
+        }
         .browse_category{
             display: flex;
             flex-direction: column;
@@ -62,7 +64,6 @@ main{
                 padding: $spacing 0;
                 width: 60%;
             }
-            transition: transform .2s;
             &:hover{
                 transform: scale(1.025);
             }
@@ -76,6 +77,68 @@ main{
         }
         .fb3{
             margin-left: 5px;
+        }
+        .banner_new_arrivals{
+            // position: relative;
+            background-image: url(/imgs/banner-3-2x-scaled.jpg);
+            @include banner;
+            padding: ($spacing * 4) 0;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .best_sellers{
+            span{
+                color: $hover_green;
+                @include bold;
+            }div{
+                display: flex;
+                justify-content: space-between;
+                padding: ($spacing / 3) 0;
+            }
+            h2{
+                padding: ($spacing / 2) 0
+            }
+            .best_seller_text{
+                flex-direction: column
+            }
+            .category_box{
+                padding: 0 10px ($spacing) 10px;
+                p{
+                    padding: ($spacing / 2) 0;
+                    margin-bottom: 0;
+                }
+                span{
+                    padding: 0
+                }
+            }
+            button{
+                @include bold;
+                align-self: center;
+            }
+        }
+    }
+    .shop_half_break{
+        .join_newsletter{
+            position: absolute;
+            bottom: -60%;
+            display: flex;
+            width: 90%;
+            @include banner;
+            color: $secondary_text;
+            background-image: url(/imgs/banner-7-2x-scaled.jpg);
+            p{
+                padding: $spacing 0;
+            }
+            div{
+                padding: $spacing * 2.5;
+                input{
+                    @include input;
+                    padding: 5px 20px;
+                }
+            }
         }
     }
 }

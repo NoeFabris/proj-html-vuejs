@@ -3,6 +3,10 @@
     margin: 0;
     font-family: $primary_Font;
     font-weight: 300;
+    transition: $transitions;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: $secondary_font;
 }
 section{
     padding-top: $spacing / 1.5;
@@ -14,6 +18,7 @@ strong{
 .my_btn{
     padding: $spacing / 2 $spacing;
     border-radius: 30px;
+    width: 250px;
     background-color: $primary_color;
     border: 0px;
     &:hover{
@@ -24,6 +29,7 @@ strong{
 .my_btn_reverse{
     padding: $spacing / 4 $spacing;
     border-radius: 30px;
+    width: 200px;
     background-color: $hover_green;
     color: $primary_color;
     border: 0px;

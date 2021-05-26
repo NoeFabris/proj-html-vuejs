@@ -1,5 +1,6 @@
 header{
     .mynav_pt1{
+        // position: fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -12,11 +13,8 @@ header{
         .navbar_search{
             position: relative;
             input{
-                background-color: lightgray;
-                border: 0px;
-                padding: 5px 40px;
+                @include input;
                 width: 250px;
-                border-radius: 30px;
             }
             i{
                 position: absolute;
