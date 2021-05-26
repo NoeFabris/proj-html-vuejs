@@ -19,6 +19,7 @@ new Vue ({
                 name: 'Home',
                 link: '#',
                 dd: true,
+                footer: true,
                 dropdown: [
                     {
                         name: 'dd 1',
@@ -38,10 +39,11 @@ new Vue ({
                     },
                 ]
             },
-                link2: {
+            link2: {
                 name: 'Shop',
                 link: '#',
                 dd: true,
+                footer: true,
                 dropdown: [
                     {
                         name: 'dd 1',
@@ -61,28 +63,32 @@ new Vue ({
                     },
                 ]
             },
-                link3: {
+            link3: {
                 name: 'About',
                 link: '#',
                 dd: false,
+                footer: true,
                 dropdown: [{}]
             },
             link4: {
                 name: 'Blog',
                 link: '#',
                 dd: false,
+                footer: true,
                 dropdown: [{}]
             },
             link5: {
                 name: 'Contact',
                 link: '#',
                 dd: false,
+                footer: true,
                 dropdown: [{}]
             },
             link6: {
                 name: 'Shop By Brand',
                 link: '#',
                 dd: true,
+                footer: false,
                 dropdown: [
                     {
                         name: 'dd 1',
@@ -102,7 +108,28 @@ new Vue ({
                     },
                 ]
             }
+        },
+        socialPages: {
+            social1: {
+                name: 'Facebook',
+                link: '#',
+                icon: 'fab fa-facebook-f'
+            },
+            social2: {
+                name: 'Twitter',
+                link: '#',
+                icon: 'fab fa-twitter'
+            },
+            social3: {
+                name: 'Instagram',
+                link: '#',
+                icon: 'fab fa-instagram'
+            },
+            social4: {
+                name: 'Youtube',
+                link: '#',
+                icon: 'fab fa-youtube'
+            }
         }
-
     }
 })

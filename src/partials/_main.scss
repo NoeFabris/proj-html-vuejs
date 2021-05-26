@@ -1,6 +1,6 @@
 main{
     .jumbotron{
-        background-image: url('/imgs/banner-5-2x-scaled.jpg');
+        background-image: url('imgs/banner-5-2x-scaled.jpg');
         opacity: rgba(0, 0, 0, 1);
         @include banner;
         // h1{
@@ -49,8 +49,8 @@ main{
 
 
             // background: #eb01a5;
-            background-image: url("/imgs/bg-transparent-3.png"); /* fallback */
-            background-image: url("/imgs/bg-transparent-3.png"), linear-gradient($primary_green, rgba(30,49,32,0.9)); 
+            background-image: url("imgs/bg-transparent-3.png"); /* fallback */
+            background-image: url("imgs/bg-transparent-3.png"), linear-gradient($primary_green, rgba(30,49,32,0.9)); 
 
             // background: linear-gradient(to bottom, transparent, $primary_green), url('/imgs/bg-transparent-3.png');
             // @include green_line;
@@ -80,7 +80,7 @@ main{
         }
         .banner_new_arrivals{
             // position: relative;
-            background-image: url(/imgs/banner-3-2x-scaled.jpg);
+            background-image: url('imgs/banner-3-2x-scaled.jpg');
             @include banner;
             padding: ($spacing * 4) 0;
             div{
@@ -126,7 +126,7 @@ main{
             transform: translateY(-15%);
             @include banner;
             color: $secondary_text;
-            background-image: url(/imgs/banner-7-2x-scaled.jpg);
+            background-image: url('imgs/banner-7-2x-scaled.jpg');
             p{
                 padding: $spacing 0;
             }
@@ -186,7 +186,7 @@ main{
             flex-direction: column;
             align-items: center;
             @include banner;
-            background-image: url('/imgs/banner-8-2x.jpg');
+            background-image: url('imgs/banner-8-2x.jpg');
             span{
                 font-weight: $font_bold;
             }
@@ -200,13 +200,17 @@ main{
             flex-direction: column;
             align-items: center;
             @include banner;
-            background-image: url('/imgs/banner-9-2x.jpg');
+            background-image: url('imgs/banner-9-2x.jpg');
             span{
                 font-weight: $font_bold;
             }
             &:hover{
                 transform: scale(1.025);
             }
+        }
+        .bg-dog, .bg-cat{
+            display: flex;
+            width: 50%;
         }
         .new_arrivals{
             .new_arrivals_text{

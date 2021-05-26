@@ -1,6 +1,6 @@
 footer{
     background-color: $primary_green;
-    padding: ($spacing * 2) 0;
+    padding: ($spacing * 2) 0 0 0;
     color: $primary_text;
     .logo_info{
         @include footer_col;
@@ -49,5 +49,28 @@ footer{
         width: 100%;
         border-radius: 1px;
         border-bottom: 1px solid $line_color;
+    }
+    .footer_bottom{
+        padding-bottom: 0;
+        ul{
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            li{
+                list-style: none;
+                padding: $spacing ($spacing / 2);
+                a{
+                    color: $primary_text;
+                    text-decoration: none;
+                }
+            }
+        }
+        .end_line{
+            background-color: black;
+            p{
+                margin: $spacing 0;
+                text-align: center;
+            }
+        }
     }
 }
