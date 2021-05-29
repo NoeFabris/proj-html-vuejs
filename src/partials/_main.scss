@@ -1,15 +1,13 @@
 main{
     .jumbotron{
-        background-image: url('imgs/banner-5-2x-scaled.jpg');
-        opacity: rgba(0, 0, 0, 1);
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../imgs/banner-5-2x-scaled.jpg');
+        // opacity: 0.1;
         @include banner;
-        // h1{
-        //     font-family: $secondary_font;
-        //     font-size: 3rem;
-        //     padding: $spacing 0;
-        // }
+        // display: flex;
+        // flex-direction: column;
+        // height: 100%;
+        // flex-grow: 1;
         .jumbotron_text{
-            // @include bold;
             padding: ($spacing * 4) 0;
         }
     }
@@ -25,6 +23,9 @@ main{
             h4{
                 font-family: $secondary_font;
             }
+            span{
+                text-align: center;
+            }
         }
         .category_box{
             display: flex;
@@ -38,6 +39,11 @@ main{
                 width: 100%;
                 object-fit: cover;
             }
+            &:hover{
+                img{
+                    // filter: drop-shadow(8px 8px 10px gray);
+                }
+            }
         }
         .food_box{
             display: flex;
@@ -45,14 +51,15 @@ main{
             align-items: center;
             padding: ($spacing * 2.5) 0;
             color: $primary_text;
-            // background: $primary_green;
-
-
+            
             // background: #eb01a5;
-            background-image: url("imgs/bg-transparent-3.png"); /* fallback */
-            background-image: url("imgs/bg-transparent-3.png"), linear-gradient($primary_green, rgba(30,49,32,0.9)); 
+            // background: linear-gradient(rgba(0, 0, 0, 0.0), $primary_green), url("/imgs/bg-transparent-3.png");
+            // background: $primary_green;
+            // @include banner;
 
-            // background: linear-gradient(to bottom, transparent, $primary_green), url('/imgs/bg-transparent-3.png');
+            background-color: $primary_green;
+            background-image: url('/imgs/bg-transparent-3.png');
+            // background-image: linear-gradient(to bottom, $primary_green, rgba(0, 0, 0, 0.9)), url('../../imgs/bg-transparent-3.png');
             // @include green_line;
             h4{
                 font-family: $secondary_font;
@@ -80,7 +87,7 @@ main{
         }
         .banner_new_arrivals{
             // position: relative;
-            background-image: url('imgs/banner-3-2x-scaled.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../imgs/banner-3-2x-scaled.jpg');
             @include banner;
             padding: ($spacing * 4) 0;
             div{
@@ -96,7 +103,7 @@ main{
             }div{
                 display: flex;
                 justify-content: space-between;
-                padding: ($spacing / 3) 0;
+                // padding: ($spacing / 3) 0;
             }
             h2{
                 padding: ($spacing / 2) 0
@@ -113,6 +120,16 @@ main{
                 span{
                     padding: 0
                 }
+                &:hover{
+                    img{
+                        filter: blur(3px);
+                    }
+                    .hover{
+                        transition: 0;
+
+                        visibility: visible; 
+                    }
+                }
             }
             button{
                 @include bold;
@@ -124,9 +141,9 @@ main{
         .join_newsletter{
             // display: flex;
             transform: translateY(-15%);
+            background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(131, 131, 131, 0.2)), url('../../imgs/banner-7-2x-scaled.jpg');
             @include banner;
             color: $secondary_text;
-            background-image: url('imgs/banner-7-2x-scaled.jpg');
             p{
                 padding: $spacing 0;
             }
@@ -185,8 +202,8 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../imgs/banner-8-2x.jpg');
             @include banner;
-            background-image: url('imgs/banner-8-2x.jpg');
             span{
                 font-weight: $font_bold;
             }
@@ -199,8 +216,8 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../imgs/banner-9-2x.jpg');
             @include banner;
-            background-image: url('imgs/banner-9-2x.jpg');
             span{
                 font-weight: $font_bold;
             }
@@ -242,6 +259,36 @@ main{
                     width: 100%;
                     object-fit: cover;
                 }
+            }
+        }
+    }
+    .img_hover{
+        position: relative;
+        z-index: 0;
+        // filter: sepia(1);
+        .hover{
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 1.5rem;
+            color: $primary_text;
+            position: absolute;
+            top: 50%;
+            right: 13%;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            i{
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 50%;
+                display: flex;
+                align-self: center;
+                padding: 20px;
+                // height: 50px;
+                // width: 50px;
+            }
+            span{
+                color: $primary_text;
             }
         }
     }

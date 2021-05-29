@@ -107,8 +107,7 @@ header .mynav_pt2 ul li a:hover {
 }
 
 main .jumbotron {
-  background-image: url("/imgs/banner-5-2x-scaled.jpg");
-  opacity: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/banner-5-2x-scaled.jpg?2d66c51a7029eb241306d82e0454d8fa);
   background-size: cover;
   background-size: 100% 100%;
   color: #ffffff;
@@ -137,6 +136,9 @@ main .shop_pt1 .browse_category {
 main .shop_pt1 .browse_category h4 {
   font-family: "Trocchi", serif;
 }
+main .shop_pt1 .browse_category span {
+  text-align: center;
+}
 main .shop_pt1 .category_box {
   display: flex;
   flex-direction: column;
@@ -157,9 +159,8 @@ main .shop_pt1 .food_box {
   align-items: center;
   padding: 75px 0;
   color: #ffffff;
+  background-color: #1e3020;
   background-image: url("/imgs/bg-transparent-3.png");
-  /* fallback */
-  background-image: url("/imgs/bg-transparent-3.png"), linear-gradient(#1e3020, rgba(30, 49, 32, 0.9));
 }
 main .shop_pt1 .food_box h4 {
   font-family: "Trocchi", serif;
@@ -184,7 +185,7 @@ main .shop_pt1 .fb3 {
   margin-left: 5px;
 }
 main .shop_pt1 .banner_new_arrivals {
-  background-image: url(/imgs/banner-3-2x-scaled.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/banner-3-2x-scaled.jpg?4651f35a2daf56d5cdfcf1d00ee2e62a);
   background-size: cover;
   background-size: 100% 100%;
   color: #ffffff;
@@ -211,7 +212,6 @@ main .shop_pt1 .best_sellers span {
 main .shop_pt1 .best_sellers div {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
 }
 main .shop_pt1 .best_sellers h2 {
   padding: 15px 0;
@@ -229,18 +229,25 @@ main .shop_pt1 .best_sellers .category_box p {
 main .shop_pt1 .best_sellers .category_box span {
   padding: 0;
 }
+main .shop_pt1 .best_sellers .category_box:hover img {
+  filter: blur(3px);
+}
+main .shop_pt1 .best_sellers .category_box:hover .hover {
+  transition: 0;
+  visibility: visible;
+}
 main .shop_pt1 .best_sellers button {
   font-weight: 600;
   align-self: center;
 }
 main .shop_half_break .join_newsletter {
   transform: translateY(-15%);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(131, 131, 131, 0.2)), url(/images/banner-7-2x-scaled.jpg?31a92da47e036b40e2e57b6facf0394c);
   background-size: cover;
   background-size: 100% 100%;
   color: #ffffff;
   overflow: hidden;
   color: #09110a;
-  background-image: url(/imgs/banner-7-2x-scaled.jpg);
 }
 main .shop_half_break .join_newsletter h1 {
   font-size: 3rem;
@@ -307,11 +314,11 @@ main .shop_pt2 .bg-dog {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/banner-8-2x.jpg?61ef8f14af7ca2d89059ff7e4561cbe3);
   background-size: cover;
   background-size: 100% 100%;
   color: #ffffff;
   overflow: hidden;
-  background-image: url("/imgs/banner-8-2x.jpg");
 }
 main .shop_pt2 .bg-dog h1 {
   font-size: 3rem;
@@ -332,11 +339,11 @@ main .shop_pt2 .bg-cat {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/banner-9-2x.jpg?3119a952a2046877de3a5760ba1f74a5);
   background-size: cover;
   background-size: 100% 100%;
   color: #ffffff;
   overflow: hidden;
-  background-image: url("/imgs/banner-9-2x.jpg");
 }
 main .shop_pt2 .bg-cat h1 {
   font-size: 3rem;
@@ -386,6 +393,33 @@ main .shop_pt2 .new_arrivals .new_arrivals_box img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main .img_hover {
+  position: relative;
+  z-index: 0;
+}
+main .img_hover .hover {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: 13%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+main .img_hover .hover i {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+  padding: 20px;
+}
+main .img_hover .hover span {
+  color: #ffffff;
+}
 
 footer {
   background-color: #1e3020;
@@ -422,7 +456,7 @@ footer .bg_box_footer {
   display: flex;
   flex-direction: column;
   background-color: #1e3020;
-  background-image: url("/imgs/bg-transparent-3.png");
+  background-image: url(/images/bg-transparent-3.png?e0befdb77e1e2afa5651d7d112409fdf);
   color: #ffffff;
   border-radius: 5px;
   padding: 30px;
@@ -466,6 +500,7 @@ footer .footer_bottom ul li a {
 }
 footer .footer_bottom .end_line {
   background-color: black;
+  padding: 0;
 }
 footer .footer_bottom .end_line p {
   margin: 30px 0;
@@ -474,7 +509,7 @@ footer .footer_bottom .end_line p {
 
 .first_green_line {
   background-color: #1e3020;
-  background-image: url("/imgs/bg-transparent-3.png");
+  background-image: url(/images/bg-transparent-3.png?e0befdb77e1e2afa5651d7d112409fdf);
   color: #ffffff;
 }
 .first_green_line .first_green_line_text {
@@ -484,7 +519,7 @@ footer .footer_bottom .end_line p {
 
 .second_green_line {
   background-color: #1e3020;
-  background-image: url("/imgs/bg-transparent-3.png");
+  background-image: url(/images/bg-transparent-3.png?e0befdb77e1e2afa5651d7d112409fdf);
   color: #ffffff;
 }
 .second_green_line .second_green_line_text {
@@ -504,7 +539,7 @@ footer .footer_bottom .end_line p {
 
 .shop_half_break .green_block {
   background-color: #1e3020;
-  background-image: url("/imgs/bg-transparent-3.png");
+  background-image: url(/images/bg-transparent-3.png?e0befdb77e1e2afa5651d7d112409fdf);
   color: #ffffff;
 }
 .shop_half_break .green_block .testimonials_box {
@@ -535,7 +570,7 @@ footer .footer_bottom .end_line p {
 
 .third_green_line {
   background-color: #1e3020;
-  background-image: url("/imgs/bg-transparent-3.png");
+  background-image: url(/images/bg-transparent-3.png?e0befdb77e1e2afa5651d7d112409fdf);
   color: #ffffff;
 }
 .third_green_line .features_box {
